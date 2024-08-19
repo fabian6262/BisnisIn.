@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Update text color for nav links */
+    .nav-link {
+      color: #284652;
+    }
+
+
+    .bg-indigo {
+      background-image: url('pexels-olly-3907161.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-5">
+      <a href="#" class="bg-alif text-3xl font-bold text-indigo">BisnisIn</a>
+      <div>
+        <nav>
+          <a href="#features" class="nav-link hover:text-indigo">Features</a>
+          <a href="#about" class="nav-link hover:text-indigo">About</a>
+          <a href="#contact" class="nav-link hover:text-indigo">Contact</a>
+          <a href="#contact" class="nav-link hover:text-indigo">Install</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo">
+    <div class="container mx-auto flex flex-col items-center py-20">
+      <h1 class="bg-imel-owen text-5xl font-bold text-center">Kembangkan Bisnis Anda Bersama Kami.</h1>
+      <p class="bg-imel-owen-randy text-xl mt-5 text-center">Bingung gimana caranya kembangin UMKM anda? BisnisIn aja.</p>
+      <a href="#features" class="mt-10 bg-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-gray-200">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section-bg py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center text-gray-800">Mengapa harus memakai jasa kami</h2>
+      <div class="flex flex-wrap mt-10">
+        <div class="w-full md:w-1/3 p-5">
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-indigo-600 text-5xl text-center mb-5">🚀</div>
+            <h3 class="text-2xl font-bold text-center">Proses Cepat Dan Aman</h3>
+            <p class="text-gray-600 mt-2 text-center">Tim kami selau sigap untuk menolong anda.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-5">
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-indigo-600 text-5xl text-center mb-5">🔒</div>
+            <h3 class="text-2xl font-bold text-center">Keamanan Bertransaksi</h3>
+            <p class="text-gray-600 mt-2 text-center">Kami sudah terdaftar di OJK.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-5">
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-indigo-600 text-5xl text-center mb-5">⚙️</div>
+            <h3 class="text-2xl font-bold text-center">Kustomisasi</h3>
+            <p class="text-gray-600 mt-2 text-center">Anda bisa berinvestasi dengan cara anda sendiri.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-bg bg-gray-200 py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 p-5">
+        <h2 class="text-4xl font-bold text-gray-800">About Us</h2>
+        <p class="text-gray-600 mt-5">Kami melihat banyak umkm kesulitan dalam mengembangkan bisnis mereka akibat kurangnya dana</p>
+        <p class="text-gray-600 mt-5">Kami hadir untuk membantu umkm dengan cara menyediakan platform investasi dengan cepat dan aman</p>
+      </div>
+      <div class="md:w-1/2 p-5">
+        <img src="https://via.placeholder.com/400" alt="About us image" class="rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <!-- <section id="contact" class="section-bg py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center text-gray-800">Contact Us</h2>
+      <form class="mt-10 max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6">
+        <div class="mb-5">
+          <label for="name" class="block text-gray-600">Name</label>
+          <input type="text" id="name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div class="mb-5">
+          <label for="email" class="block text-gray-600">Email</label>
+          <input type="email" id="email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-500">
+        </div>
+        <div class="mb-5">
+          <label for="message" class="block text-gray-600">Message</label>
+          <textarea id="message" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-indigo-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 rounded-lg hover:bg-indigo-500">Send Message</button>
+      </form>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6">
+  <div class="container mx-auto flex flex-col items-center">
+    <p class="mb-4">Follow Us</p>
+    <div class="flex space-x-6">
+      <a href="https://www.instagram.com/yourprofile" target="_blank" class="hover:text-indigo-500">
+        <i class="fab fa-instagram text-2xl"></i>
+      </a>
+      <a href="https://www.facebook.com/yourprofile" target="_blank" class="hover:text-indigo-500">
+        <i class="fab fa-facebook text-2xl"></i>
+      </a>
+
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
